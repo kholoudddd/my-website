@@ -3,124 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A personal portfolio website for Alex Morgan.">
-  <title>Alex Morgan | Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+  <meta name="description" content="Portfolio of Kholoud Ababtain, Technical Cloud Product Manager.">
+  <title>Kholoud Ababtain | Technical Cloud Product Manager</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Replace "Alex Morgan" with your own name throughout this file. -->
+  <!-- Simple navigation: each link moves to a section on this page. -->
   <header class="site-header">
-    <nav class="navbar container" aria-label="Main navigation">
-      <a class="logo" href="#home" aria-label="Go to home">AM<span>.</span></a>
-
-      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home"><span>KA</span> / Cloud Product</a>
+      <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
-
       <div class="nav-links">
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#journey">Journey</a>
         <a href="#contact">Contact</a>
-        <button class="theme-button" type="button" aria-label="Switch to dark mode">☾</button>
       </div>
     </nav>
   </header>
 
   <main>
+    <!-- HERO: the first introduction visitors see. -->
     <section class="hero container" id="home">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">Hello, my name is</p>
-        <h1>Alex Morgan.</h1>
-        <h2>I turn ideas into <em>simple</em> digital experiences.</h2>
-        <p class="hero-text">I’m an aspiring web developer learning to build thoughtful, accessible websites. This is my little corner of the internet where I share what I make and what I’m learning.</p>
+      <div class="hero-content reveal">
+        <p class="status"><span></span> Technical product thinking, grounded in cloud</p>
+        <h1>Kholoud<br>Ababtain</h1>
+        <p class="hero-role">Technical Cloud Product Manager</p>
+        <p class="hero-intro">I translate technical and business requirements into usable cloud services and platform features—connecting user needs, product direction, and cloud infrastructure.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#projects">See my work <span>↗</span></a>
-          <a class="text-link" href="#contact">Let’s talk <span>→</span></a>
+          <a class="button primary-button" href="#experience">View experience <span aria-hidden="true">→</span></a>
+          <a class="button secondary-button" href="#journey">My learning journey</a>
         </div>
       </div>
 
-      <div class="hero-visual reveal" aria-hidden="true">
-        <div class="portrait-card">
-          <div class="portrait-initials">AM</div>
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
+      <!-- Decorative cloud-system diagram made with regular HTML and CSS. -->
+      <div class="system-visual reveal" aria-label="Abstract cloud product system diagram">
+        <div class="system-top"><span>PRODUCT SYSTEM</span><span class="live-dot">LIVE</span></div>
+        <div class="cloud-core"><small>CLOUD PRODUCT</small><strong>User need</strong><i></i><strong>Platform capability</strong></div>
+        <div class="system-nodes">
+          <div>ENGINEERING</div><div>SECURITY</div><div>OPERATIONS</div><div>UX / UI</div>
         </div>
-        <div class="floating-note note-one">Based in<br><strong>Your City</strong></div>
-        <div class="floating-note note-two"><strong>Open to</strong><br>new ideas ✦</div>
       </div>
     </section>
 
+    <!-- ABOUT: how product management and technical knowledge connect. -->
     <section class="section about" id="about">
-      <div class="container two-column">
-        <div class="section-heading reveal">
-          <p class="eyebrow">01 / About</p>
-          <h2>A curious mind with a love for <em>making things.</em></h2>
-        </div>
-        <div class="about-copy reveal">
-          <p>I started learning web development because I wanted to understand how the websites I use every day are made. I enjoy taking an idea, breaking it into smaller pieces, and slowly bringing it to life.</p>
-          <p>When I’m not coding, you might find me reading, taking photos, exploring new places, or learning a completely random skill. Replace this paragraph with the things that make you, you.</p>
-          <div class="quick-facts">
-            <div><span>Currently</span><strong>Learning JavaScript</strong></div>
-            <div><span>Interested in</span><strong>Design + Technology</strong></div>
-          </div>
+      <div class="container split-layout">
+        <div class="section-title reveal"><p class="kicker">01 / About me</p><h2>Product direction meets <span>technical depth.</span></h2></div>
+        <div class="about-text reveal">
+          <p class="large-text">I work at the intersection of cloud technology, product management, and user experience.</p>
+          <p>My role involves understanding how cloud services work technically, then translating that understanding into functional requirements, acceptance criteria, roadmaps, and platform features that people can use.</p>
+          <p>I collaborate with engineering, operations, security, UX/UI, and other cross-functional teams to move cloud-product ideas from requirements to usable capabilities.</p>
+          <div class="principle"><span>MY APPROACH</span><p>Understand the system. Clarify the need. Shape the product.</p></div>
         </div>
       </div>
     </section>
 
-    <section class="section skills container" id="skills">
-      <div class="section-heading reveal">
-        <p class="eyebrow">02 / Skills</p>
-        <h2>Things I work <em>with.</em></h2>
-      </div>
-      <div class="skill-grid reveal">
-        <article class="skill-card"><span>01</span><h3>HTML</h3><p>Writing clear, meaningful page structure.</p></article>
-        <article class="skill-card"><span>02</span><h3>CSS</h3><p>Creating responsive layouts and visual styles.</p></article>
-        <article class="skill-card"><span>03</span><h3>JavaScript</h3><p>Adding useful interactions to the browser.</p></article>
-        <article class="skill-card"><span>04</span><h3>Design</h3><p>Keeping experiences simple and easy to use.</p></article>
+    <!-- WHAT I WORK WITH: grouped topics make a long skill list easier to scan. -->
+    <section class="section container" id="work">
+      <div class="section-title reveal"><p class="kicker">02 / What I work with</p><h2>A connected cloud-product <span>toolkit.</span></h2></div>
+      <div class="work-grid">
+        <article class="work-card reveal"><p class="card-number">01</p><h3>Cloud Infrastructure</h3><ul><li>Virtual machines</li><li>Cloud management portals</li><li>Backup and restore</li><li>IP address management</li></ul></article>
+        <article class="work-card reveal"><p class="card-number">02</p><h3>Networking & Security</h3><ul><li>Load balancing and DNS</li><li>IAM, RBAC, and permissions</li><li>Firewall rules</li><li>Certificates and threat feeds</li></ul></article>
+        <article class="work-card reveal"><p class="card-number">03</p><h3>Storage & Data</h3><ul><li>Object Storage / S3</li><li>NFS file storage</li><li>SMB file storage</li><li>Storage service concepts</li></ul></article>
+        <article class="work-card reveal"><p class="card-number">04</p><h3>Product Management</h3><ul><li>Product ownership</li><li>Roadmaps and prioritization</li><li>Requirements and acceptance criteria</li><li>Cross-functional collaboration</li></ul></article>
+        <article class="work-card wide-card reveal"><p class="card-number">05</p><h3>Tools & Documentation</h3><ul><li>Jira and backlog management</li><li>Technical documentation</li><li>API testing with Postman</li><li>Git and GitHub</li></ul></article>
       </div>
     </section>
 
-    <section class="section projects" id="projects">
+    <!-- EXPERIENCE: product areas only; no confidential company details. -->
+    <section class="section experience" id="experience">
       <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">03 / Selected work</p>
-          <h2>A few things I’ve <em>built.</em></h2>
-        </div>
-        <div class="project-list">
-          <article class="project-card reveal">
-            <div class="project-art art-one"><span>01</span><div class="mini-window"><i></i><i></i><i></i></div></div>
-            <div class="project-info"><p class="project-type">Web Design · 2026</p><h3>Weather Dashboard</h3><p>A clean dashboard that shows the current weather and weekly forecast for any city.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a href="#" class="project-link" aria-label="View Weather Dashboard project">View project ↗</a></div>
-          </article>
-          <article class="project-card reverse reveal">
-            <div class="project-art art-two"><span>02</span><div class="phone-shape"><i></i><b></b></div></div>
-            <div class="project-info"><p class="project-type">Personal Project · 2026</p><h3>Daily Focus</h3><p>A simple task list that helps people choose their three most important goals for the day.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a href="#" class="project-link" aria-label="View Daily Focus project">View project ↗</a></div>
-          </article>
+        <div class="section-title reveal"><p class="kicker">03 / Selected product experience</p><h2>Cloud capabilities shaped as <span>usable products.</span></h2><p class="section-note">Selected product areas, presented without confidential company information.</p></div>
+        <div class="experience-list">
+          <article class="experience-card reveal"><span class="experience-index">01</span><div><p class="label">COMPUTE & STORAGE</p><h3>Core cloud services</h3><p>Requirements and product improvements across Virtual Machines, Object Storage / S3, NFS and SMB file storage, and backup and restore capabilities.</p></div><div class="tag-list"><span>VMs</span><span>S3</span><span>NFS</span><span>SMB</span><span>Backup</span></div></article>
+          <article class="experience-card reveal"><span class="experience-index">02</span><div><p class="label">NETWORKING</p><h3>Connectivity and traffic</h3><p>Product areas involving load balancers, global load balancing, DNS, certificate management, firewall rules, and IP address management.</p></div><div class="tag-list"><span>DNS</span><span>Load Balancing</span><span>Certificates</span><span>Firewall</span></div></article>
+          <article class="experience-card reveal"><span class="experience-index">03</span><div><p class="label">ACCESS & PLATFORM</p><h3>Secure self-service experiences</h3><p>Cloud portal features spanning IAM, RBAC, permission profiles, notification centers, threat feed / IOC management, and SMTP relay.</p></div><div class="tag-list"><span>IAM</span><span>RBAC</span><span>IOC</span><span>SMTP</span><span>Portals</span></div></article>
         </div>
       </div>
     </section>
 
+    <!-- SKILLS: concise, recruiter-friendly overview. -->
+    <section class="section container" id="skills">
+      <div class="section-title reveal"><p class="kicker">04 / Skills</p><h2>From product intent to <span>delivery detail.</span></h2></div>
+      <div class="skills-panel reveal">
+        <div><h3>Product</h3><p>Cloud product management</p><p>Product ownership</p><p>Feature prioritization</p><p>Roadmap planning</p></div>
+        <div><h3>Definition</h3><p>Functional requirements</p><p>Acceptance criteria</p><p>Backlog management</p><p>Technical documentation</p></div>
+        <div><h3>Technical</h3><p>Cloud infrastructure</p><p>Networking concepts</p><p>API testing with Postman</p><p>IAM and security concepts</p></div>
+        <div><h3>Collaboration</h3><p>Engineering</p><p>Operations and security</p><p>UX/UI</p><p>Cross-functional teams</p></div>
+      </div>
+    </section>
+
+    <!-- JOURNEY: this website is itself a hands-on learning project. -->
+    <section class="section journey" id="journey">
+      <div class="container">
+        <div class="journey-intro reveal"><div class="section-title"><p class="kicker">05 / Building this website</p><h2>Learning the stack by <span>shipping it.</span></h2></div><p>I built and hosted this portfolio to understand web infrastructure hands-on—not only conceptually. Each step connects the website in the browser to the cloud infrastructure behind it.</p></div>
+        <div class="timeline reveal" aria-label="Website learning journey">
+          <div class="timeline-step complete"><span>01</span><strong>HTML / CSS / JS</strong><small>Build</small></div>
+          <div class="timeline-step complete"><span>02</span><strong>Git</strong><small>Track</small></div>
+          <div class="timeline-step complete"><span>03</span><strong>GitHub</strong><small>Store</small></div>
+          <div class="timeline-step complete"><span>04</span><strong>AWS EC2</strong><small>Deploy</small></div>
+          <div class="timeline-step complete"><span>05</span><strong>Linux</strong><small>Operate</small></div>
+          <div class="timeline-step complete"><span>06</span><strong>Nginx</strong><small>Serve</small></div>
+          <div class="timeline-step current"><span>07</span><strong>DNS</strong><small>Learning</small></div>
+          <div class="timeline-step next"><span>08</span><strong>HTTPS</strong><small>Next</small></div>
+        </div>
+        <div class="journey-details reveal"><p><span>✓</span> Configured AWS Security Groups</p><p><span>✓</span> Connected with SSH / EC2 Instance Connect</p><p><span>✓</span> Installed and configured Nginx</p><p><span>✓</span> Hosted the site publicly from an EC2 VM</p></div>
+      </div>
+    </section>
+
+    <!-- CONTACT: no email is shown because one was not provided. -->
     <section class="section contact container" id="contact">
-      <div class="contact-box reveal">
-        <p class="eyebrow">04 / Contact</p>
-        <h2>Have an idea?<br><em>Let’s make it happen.</em></h2>
-        <p>I’m always happy to meet new people, hear about interesting ideas, or simply have a chat.</p>
-        <!-- Replace this email address with your own. -->
-        <a class="button button-light" href="mailto:hello@example.com">hello@example.com <span>↗</span></a>
+      <div class="contact-panel reveal">
+        <p class="kicker">06 / Contact</p>
+        <h2>Let’s talk about cloud products, platforms, and technical product work.</h2>
+        <p>Add your preferred email or LinkedIn link here when you are ready to share the site.</p>
+        <a class="button contact-button" href="#home">Back to the top <span aria-hidden="true">↑</span></a>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-content">
-      <p>© <span id="year"></span> Alex Morgan</p>
-      <div><a href="#">GitHub</a><a href="#">LinkedIn</a><a href="#home">Back to top ↑</a></div>
-    </div>
-  </footer>
-
+  <footer><div class="container footer-content"><p>© <span id="year"></span> Kholoud Ababtain</p><p>Designed and built with HTML, CSS & JavaScript.</p></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
